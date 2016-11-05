@@ -1,0 +1,74 @@
+﻿*CODEBOOK*
+
+Name   :  run_analysis.R
+
+Phases : 
+		1.- List files test and train	
+		2.- Creation variables names
+		3.- Creation file unique file test and train plus combine
+		4.- Calcul mean and standard deviation for all variables(test,train, and combine)
+		5.- Save of file :file of calcul
+                6.- Print elapsed pgm 
+		
+		
+		
+Variables .-
+
+Phase_1 .
+
+init       : system time
+
+path_test  : path files test
+path_train : path files save
+
+filest_test : list of files of dir test 
+files_train : list of files of dir train
+
+Phase_2 .
+
+col_nombre  : vector with the list de vars (are the same for test)
+
+
+Phase_3 .
+
+df_total    : init data frame for info combine
+df_test     : init data frame for info var test
+
+file        : name file test
+fich0       : path for file
+df          : data.frame lecture data
+
+p           : init vector for copy of col and append diferent cols
+
+df_test     : data.frame for all info variables test_file
+
+df_train    : init data frame for info var train
+
+**Note**    : in this phase there is the var explained
+
+df_total    : combine vars of test and train(append)
+
+
+Phase_4.
+
+media_test   : mean of each type of var data test
+sddesv_test  : sd of each type of var data test
+media_train  : mean of each type of var data train
+sddesv_train : sd of each type of var data train
+media_total  : mean of each type of var data total
+sddesv_total : sd of each type of var data total
+resum_Calcul : data frame for all results of calcul
+
+Phase_5.
+
+path_save  : path for save file
+fich1      : name of file for save calculs
+fich_calcul: path total of file
+new_calcul : creation col for rownames
+
+Phase_6.
+
+end          : system time
+elapsed      : paste for print
+
+
